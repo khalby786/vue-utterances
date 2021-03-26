@@ -1,10 +1,12 @@
 # vue-utterances 🔮
 
+[![NPM](https://nodei.co/npm/vue-utterances.png)](https://npmjs.org/package/vue-utterances)
+
 Vue.js component for 🔮 [utterances](https://utteranc.es/) 🔮
 
 Utterances is a lightweight comments widget built on GitHub issues, for blog comments, wiki pages and more. Read more at [https://utteranc.es/](https://utteranc.es/).
 
-### This package is under active development! If you encounter bugs, please open an issue at https://github.com/khalby786/vue-utterances/issues.
+This package is under active development! If you encounter bugs, please open an issue at https://github.com/khalby786/vue-utterances/issues.
 
 ## Installation
 
@@ -16,7 +18,7 @@ npm i vue-utterances
 
 ## Usage 
 
-### Vue CLI (with a Bundler )
+### Vue CLI (with a Bundler)
 
 ```vue
 <template>
@@ -59,9 +61,9 @@ const app = {
 Vue.createApp(app).mount("#app");
 ```
 
-## Confessions
+## Confession
 
-I've never published a Vue component to NPM for public use and it's my first time, so naturally, I followed [this](https://www.freecodecamp.org/news/how-to-create-and-publish-a-vue-component-library/) tutorial. I'm not familiar with the entire concept (*yet*), and I might be doing some things the wrong way, so if you feel like something needs correction or can be improved further, please create an issue/pull request!
+I've never published a Vue component to NPM for public use and it's my first time. I followed [this](https://www.freecodecamp.org/news/how-to-create-and-publish-a-vue-component-library/) tutorial to create this component package. I'm not familiar with the entire concept (*yet*), and I might be doing some things the wrong way, so if you feel like something needs correction or can be improved further, please create an issue/pull request!
 
 ## License
 
