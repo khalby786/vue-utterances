@@ -1,30 +1,25 @@
 {
   "name": "vue-utterances",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Vue.js component for 🔮 utterances 🔮",
-
   "author": {
     "email": "khalby786@gmail.com",
     "name": "Khaleel Gibran",
     "url": "https://khaleelibran.com"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/khalby786/vue-utterances.git"
   },
-
   "main": "dist/vue-utterances.ssr.js",
   "browser": "dist/vue-utterances.esm.js",
   "module": "dist/vue-utterances.esm.js",
   "unpkg": "dist/vue-utterances.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
   "sideEffects": false,
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -32,10 +27,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

@@ -33,7 +33,7 @@ export default /*#__PURE__*/defineComponent({
     utterances.setAttribute("theme", this.theme);
     utterances.setAttribute("crossorigin", "anonymous");
 
-    this.$ref.vueUtterances.appendChild(utterances);
+    this.$refs.vueUtterances.appendChild(utterances);
   }
 });
 </script>

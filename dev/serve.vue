@@ -12,6 +12,6 @@ export default defineComponent({
 
 <template>
   <div id="app">
-    <vue-utterances repo="khalby786/vue-utterances" />
+    <vue-utterances repo="khalby786/vue-utterances" theme="github-dark"/>
   </div>
 </template>
