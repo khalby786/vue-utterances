@@ -1,6 +1,6 @@
 
 // Import vue component
-import component from '@/vue-utterances.vue';
+import component from './vue-utterances.vue';
 
 // Default export is installable instance of component.
 // IIFE injects install function into component, allowing component
