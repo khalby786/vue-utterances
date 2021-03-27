@@ -48,7 +48,7 @@ export default {
 </div>
     
 <script src="https://unpkg.com/vue@next"></script>
-<script src="https://cdn.jsdelivr.net/gh/khalby786/vue-utterances@latest/dist/vue-utterances.min.js"></script>
+<script src="https://unpkg.com/vue-utterances@0.1.2/dist/vue-utterances.min.js"></script>
 ```
 
 ```js
