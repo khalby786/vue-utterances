@@ -61,6 +61,14 @@ const app = {
 Vue.createApp(app).mount("#app");
 ```
 
+### Props
+
+| Prop | Type | Description| Required | Default |
+|------|------|------------|----------|---------|
+| `repo` | String | Repository for Utterances to connect to. Expected value: `username/repo`. More details [here](https://utteranc.es/#heading-repository). | Yes | - | 
+| `theme` | String | The Utterance theme to use. `github-light`, `github-dark`, `preferred-color-scheme`, `github-dark-orange`, `icy-dark`, `dark-blue`, `photon-dark` and `boxy-light` are the expected values. | No | `github-light` |
+| `issue-term` | String | The mapping between blog posts and GitHub issues. `pathname`, `url`, `title`, `og:title`, `[SPECIFIC ISSUE NUMBER]` and `[SPECIFIC SEARCH TERM]` are the expected values. More details [here](https://utteranc.es/#heading-mapping). | No | `pathname` |
+
 ## Confession
 
 I've never published a Vue component to NPM for public use and it's my first time. I followed [this](https://www.freecodecamp.org/news/how-to-create-and-publish-a-vue-component-library/) tutorial to create this component package. I'm not familiar with the entire concept (*yet*), and I might be doing some things the wrong way, so if you feel like something needs correction or can be improved further, please create an issue/pull request!
