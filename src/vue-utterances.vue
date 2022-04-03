@@ -1,26 +1,24 @@
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
-export default /*#__PURE__*/defineComponent({
-  name: 'VueUtterances', // vue component name
+export default /*#__PURE__*/ defineComponent({
+  name: "VueUtterances", // vue component name
   data() {
-    return {
-      
-    };
+    return {};
   },
   props: {
     repo: {
       type: String,
       default: "[ENTER REPO HERE]",
-      required: true
+      required: true,
     },
     issueTerm: {
       type: String,
-      default: "pathname"
+      default: "pathname",
     },
     theme: {
       type: String,
-      default: "github-light"
+      default: "github-light",
     },
   },
   mounted() {
@@ -34,6 +32,19 @@ export default /*#__PURE__*/defineComponent({
     utterances.setAttribute("crossorigin", "anonymous");
 
     this.$refs.vueUtterances.appendChild(utterances);
+  },
+  watch: {
+    theme: function(newTheme, oldTheme) {
+      console.log(newTheme);
+      console.log(oldTheme);
+      this.$refs.vueUtterances.querySelector("iframe").contentWindow.postMessage(
+        {
+          type: "set-theme",
+          theme: newTheme, // theme you want
+        },
+        "https://utteranc.es"
+      );
+    },
   }
 });
 </script>
@@ -44,6 +55,4 @@ export default /*#__PURE__*/defineComponent({
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
