@@ -68,6 +68,7 @@ Vue.createApp(app).mount("#app");
 | `repo` | String | Repository for Utterances to connect to. Expected value: `username/repo`. More details [here](https://utteranc.es/#heading-repository). | Yes | - | 
 | `theme` | String | The Utterance theme to use. `github-light`, `github-dark`, `preferred-color-scheme`, `github-dark-orange`, `icy-dark`, `dark-blue`, `photon-dark` and `boxy-light` are the expected values. | No | `github-light` |
 | `issue-term` | String | The mapping between blog posts and GitHub issues. `pathname`, `url`, `title`, `og:title`, `[SPECIFIC ISSUE NUMBER]` and `[SPECIFIC SEARCH TERM]` are the expected values. More details [here](https://utteranc.es/#heading-mapping). | No | `pathname` |
+| `label` | String | Choose the label that will be assigned to issues created by Utterances. More details [here](https://utteranc.es/#heading-issue-label). | No |  |
 
 ## Confession
 

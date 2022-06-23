@@ -20,6 +20,10 @@ export default /*#__PURE__*/ defineComponent({
       type: String,
       default: "github-light",
     },
+    label: {
+      type: String,
+      default: "",
+    }
   },
   mounted() {
     let utterances = document.createElement("script");
@@ -28,6 +32,9 @@ export default /*#__PURE__*/ defineComponent({
     utterances.setAttribute("src", "https://utteranc.es/client.js");
     utterances.setAttribute("repo", this.repo);
     utterances.setAttribute("issue-term", this.issueTerm);
+    if (this.label !== "") {
+      utterances.setAttribute("label", this.label);
+    }
     utterances.setAttribute("theme", this.theme);
     utterances.setAttribute("crossorigin", "anonymous");
 
