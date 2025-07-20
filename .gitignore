@@ -24,9 +24,6 @@ package-lock.json
 *.sln
 *.sw?
 
-# Local dev setup
-test/
-
 src/**/*.js
 *.js
 *.d.ts

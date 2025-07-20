@@ -1,15 +1,19 @@
 
 # vue-utterances
 
-> **Vue.js component for 🔮 utterances 🔮**
-
-[Utterances](https://utteranc.es/) is a lightweight comments widget built on GitHub issues, for blog comments, wiki pages and more.  
+Vue.js component for [Utterances](https://utteranc.es), a lightweight comments widget that uses GitHub issues. Comes with TypeScript support and reactive props.
 
 ## Installation
 
 For Vue 3, install the latest version:
 ```bash
 npm install vue-utterances
+
+# or pnpm, I've been using it lately and its great
+pnpm add vue-utterances
+
+# or yarn, if you feel fancy
+yarn add vue-utterances
 ```
 
 ## Usage
