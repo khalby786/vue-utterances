@@ -5,7 +5,6 @@ Vue.js component for [Utterances](https://utteranc.es), a lightweight comments w
 
 ## Installation
 
-For Vue 3, install the latest version:
 ```bash
 npm install vue-utterances
 
